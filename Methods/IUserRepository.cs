@@ -8,10 +8,10 @@ public interface IUserRepository
     User GetUserById(int id);
     void DeleteUser(int id);
 }
-public class UserService
+public class UserRepoService
 {
     private readonly IUserRepository _userRepository;
-    public UserService(IUserRepository userRepository)
+    public UserRepoService(IUserRepository userRepository)
     {
         _userRepository = userRepository;
 
